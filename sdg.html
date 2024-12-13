@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="falling-leaves"></div>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contents="width=device-width,
+    initial-scale=1.0">
+    <title>Darryll's Portfolio
+    </title>
+    <link rel="stylesheet" href="creative.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <body>
+        <section class="infor">
+           <div class="infor">
+               <div class="information">
+
+                <nav class="navbar">
+                    <a href="websy.html" class="active">Home</a>
+                    <a href="Project.html">My Projects:</a>
+                      
+                        </a>
+                    </a>
+                </nav>
+
+                
+                <h1>What is Gender Equality?</h1>
+                <p>Gender equality is the idea that all people, regardless of gender, have the same rights, opportunities, and access to resources. It also means that the needs, aspirations, and behaviors of all people are valued equally. Gender equality can also refer to equality in relation to sexual orientation and gender identity.</p>
+         <h1>Significance Of Gender Equality</h1>
+  
+         <p>Gender equality people will make all people around the world be happy and there will be less suffering and conflict in all people because there will be no hate that will cause all of this scenario.</p>
+         <h1>What Action shall we do?</h1>
+         <p>Be more open to unfamiliar things and try to see all in a different perspective.</p>
+         
+         
+         <img src="baklahehehe.PNG" alt="Picture" class="pridehehehe">
+        
+         
+         <script>
+            const container = document.querySelector('.falling-leaves');
+            const leafImages = [
+                "BlueLeaf.PNG",
+                "greencurl.PNG",
+                "greenleaf.PNG",
+                "Redcurl.PNG",
+                "redleaf.PNG",
+                "Yelloleaf.PNG"
+            ];
+            for (let i = 0; i < 20; i++) {
+                const leaf = document.createElement('img');
+                leaf.src = leafImages[Math.floor(Math.random() * leafImages.length)];
+                leaf.className = 'leaf';
+                leaf.style.left = Math.random() * 100 + '%';
+                leaf.style.animationDuration = Math.random() * 5 + 5 + 's';
+                leaf.style.animationDelay = Math.random() * 5 + 's';
+                leaf.style.width = Math.random() * 30 + 20 + 'px';
+                container.appendChild(leaf);
+            }
+        </script>
+ <audio autoplay loop volume="0.5">
+    <source src="KILIGMUSIC.mp3" type="audio/mp3">
+
+
+
+         <body>

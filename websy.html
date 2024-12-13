@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<div class="falling-leaves"></div>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contents="width=device-width,
+    initial-scale=1.0">
+    <title>Darryll's Portfolio
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <header class="header"
+    <a href="#" class="logo">Darryll Fauni</a>
+
+    <nav class="navbar">
+        <a href="websy.html" class="active">Home</a>
+        <a href="Project.html">My Projects:</a>
+          
+            </a>
+        </a>
+    </nav>
+</header>
+<section class="home">
+    <div class="home">
+        <div class="home-content">
+<h1>It's Me Hi!</h1>
+<h3>Aspiring Artist</h3>
+<p>Gender equality has been a dream of mine, something I have always wanted to see become a reality. I believe everyone deserves the right to respect and the same privileges that others receive. In the past, things were much worse, many people suffered, and some even lost their lives due to discrimination based on their gender. However, as time goes on, the situation has improved slightly. I hope that by raising awareness and educating people about gender issues, they can become more open-minded and respectful towards others.
+    </p>
+       <div class="btn-box">
+
+      <a href="About.html">About Me</a>
+       <a href="sdg.html">Gender Equality</a>
+    
+    
+       </div>
+</section>
+
+<div class="home-sci">
+    <a href="https://www.facebook.com/darryllilustrefauni" target="_blank">
+        <i class='bx bxl-facebook'></i>
+    </a>
+    <a href="https://www.instagram.com/d_rr_ll8/" target="_blank">
+        <i class='bx bxl-instagram'></i>
+    </a>
+    <a href="#" onclick="showEmail()">
+        <i class='bx bxl-gmail'></i>
+    </a>
+</div>
+
+<div id="popup-message" class="popup hidden">
+    <span id="popup-text"></span>
+</div>
+
+<script>
+    
+    function showEmail() {
+        const popup = document.getElementById('popup-message');
+        const popupText = document.getElementById('popup-text');
+
+    
+        popupText.textContent = 'My email: darryllilustrefauni@gmail.com'; 
+        popup.classList.remove('show popup'); 
+
+        
+        setTimeout(() => {
+            popup.classList.add('hidden');
+        }, 3000);
+    }
+</script>
+<script>
+    const container = document.querySelector('.falling-leaves');
+    const leafImages = [
+        "BlueLeaf.PNG",
+        "greencurl.PNG",
+        "greenleaf.PNG",
+        "Redcurl.PNG",
+        "redleaf.PNG",
+        "Yelloleaf.PNG"
+    ];
+    for (let i = 0; i < 20; i++) {
+        const leaf = document.createElement('img');
+        leaf.src = leafImages[Math.floor(Math.random() * leafImages.length)];
+        leaf.className = 'leaf';
+        leaf.style.left = Math.random() * 100 + '%';
+        leaf.style.animationDuration = Math.random() * 5 + 5 + 's';
+        leaf.style.animationDelay = Math.random() * 5 + 's';
+        leaf.style.width = Math.random() * 30 + 20 + 'px';
+        container.appendChild(leaf);
+    }
+</script>
+</script>
+<img src="Hearstopper.PNG" alt="Picture" class="LOVELY">
+
+
+    <img src="Nick.PNG" alt="convo" class="Nakakakilig">
+    <img src="Charlie.PNG" alt="convo" class="HIHIHI">
+
+    <audio autoplay loop volume="0.5">
+        <source src="KILIGMUSIC.mp3" type="audio/mp3">
+
+
+</body>
+</html>
+
+</section>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
+
+
+  
+</audio>

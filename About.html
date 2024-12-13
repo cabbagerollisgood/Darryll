@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="falling-leaves"></div>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contents="width=device-width,
+    initial-scale=1.0">
+    <title>Darryll's Portfolio
+    </title>
+    <link rel="stylesheet" href="creative.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   </head>
+   
+   <body>
+
+      <nav class="navbar">
+         <a href="websy.html" class="active">Home</a>
+         <a href="Project.html">My Projects:</a>
+           
+             </a>
+         </a>
+     </nav>
+
+      <section class="infor">
+         <div class="infor">
+             <div class="information">
+       
+               
+
+       <h1>About Me</h1>
+       <ul>
+           <li><span>Name: Darryll I. Fauni</li>
+           <li><span>Birthdate: September 7, 2005</li>
+           <li><span>Zodiac Sign: Virgo (Earth sign)</li>
+           <li><span>Age: 19</li>
+           <li><span>Hobbies: Cooking, Drawing, Listening to Music, and Learning New Skills</li>
+           <li><span>Likes: Taylor Swift and Pedro Pascal related things and Arts (the Cute one)</li>
+           <li><span>Dislikes:  Homophobic People and white chocolate</li>
+            <li><span>Skills:Drawing and Cooking </li>
+               <LI>Language that are slightly familliar:Godo Script,Java and HTML</LI>
+       </ul>
+   </body>
+
+   <img src="niki.PNG" alt="convo" class="pointie">
+   <img src="firstpic.png" alt="convo" class="pickachu">
+ 
+   <audio autoplay loop volume="0.5">
+      <source src="KILIGMUSIC.mp3" type="audio/mp3">
+
+      
+
+   <script>
+      const container = document.querySelector('.falling-leaves');
+      const leafImages = [
+          "BlueLeaf.PNG",
+          "greencurl.PNG",
+          "greenleaf.PNG",
+          "Redcurl.PNG",
+          "redleaf.PNG",
+          "Yelloleaf.PNG"
+      ];
+      for (let i = 0; i < 20; i++) {
+          const leaf = document.createElement('img');
+          leaf.src = leafImages[Math.floor(Math.random() * leafImages.length)];
+          leaf.className = 'leaf';
+          leaf.style.left = Math.random() * 100 + '%';
+          leaf.style.animationDuration = Math.random() * 5 + 5 + 's';
+          leaf.style.animationDelay = Math.random() * 5 + 's';
+          leaf.style.width = Math.random() * 30 + 20 + 'px';
+          container.appendChild(leaf);
+      }
+
+
+
+  </script>
+
+   
+
+   </html>
+   <header class="header"

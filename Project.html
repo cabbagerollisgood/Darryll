@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="falling-leaves"></div>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contents="width=device-width,
+    initial-scale=1.0">
+    <title>Darryll's Portfolio
+    </title>
+    <link rel="stylesheet" href="creative.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <body>
+
+        <nav class="navbar">
+            <a href="websy.html" class="active">Home</a>
+            <a href="Project.html">My Projects:</a>
+              
+                </a>
+            </a>
+        </nav>
+        <section class="infor">
+           <div class="infor">
+               <div class="information">
+
+                <h1>My Only Project:</h1>
+                <p>The only project that I made is Called Tiles Calculator
+                    where the system automatically calculate the needed materials and cost when you enter the measurement of your land.
+                </p>
+                <p>I used a IDE called blue j as my framework that runs in java language and also used Netbeans to finalize my design.</p>
+                <h6>YOU CAN CLICK THE ICON TO VISIT NETBEANS AND BLUEJ(CLICK THE JUMPING BUNNY FOR A CUTE SUPRISE)</H4>
+
+                <img src="proposal.jpg" alt="Picture" class="solo">
+                <img src="jump.gif" alt="Picture" class="bunny">
+
+                <img src="rocket.GIF" alt="Picture" class="muhahaha" width="300">
+
+<audio class="sound" src="chopper.mp3" preload="auto"></audio>
+
+<script>
+    
+    const image = document.getElementsByClassName("bunny")[0]; 
+    const sound = document.getElementsByClassName("sound")[0];    
+
+    
+    image.addEventListener('click', () => {
+        sound.play();
+    });
+</script>
+
+            
+                
+
+                <a href="https://www.bluej.org" target="_blank">
+                    <img src="blue-j.PNG" alt="Picture" class="mordecai">
+                </a>
+                <a href="https://netbeans.apache.org/front/main/download/" target="_blank">
+                <img src="Netbeans.PNG" alt="Picture" class="bini">
+            </a>
+                <body>
+                  
+
+
+                <script>
+                    const container = document.querySelector('.falling-leaves');
+                    const leafImages = [
+                        "BlueLeaf.PNG",
+                        "greencurl.PNG",
+                        "greenleaf.PNG",
+                        "Redcurl.PNG",
+                        "redleaf.PNG",
+                        "Yelloleaf.PNG"
+                    ];
+                    for (let i = 0; i < 20; i++) {
+                        const leaf = document.createElement('img');
+                        leaf.src = leafImages[Math.floor(Math.random() * leafImages.length)];
+                        leaf.className = 'leaf';
+                        leaf.style.left = Math.random() * 100 + '%';
+                        leaf.style.animationDuration = Math.random() * 5 + 5 + 's';
+                        leaf.style.animationDelay = Math.random() * 5 + 's';
+                        leaf.style.width = Math.random() * 30 + 20 + 'px';
+                        container.appendChild(leaf);
+                    }
+                </script>
+
+<audio autoplay loop volume="0.5">
+    <source src="KILIGMUSIC.mp3" type="audio/mp3">
+
+ 
+                <body>
+
