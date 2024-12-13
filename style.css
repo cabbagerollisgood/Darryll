@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+*  {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppiins', sans-serif;
+
+
+}
+
+body {
+background: #E3FCF9;
+color: #4A89AC
+}
+
+.header {
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 10%;
+background: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+}
+
+ .header{
+    font-size: 25px;
+    color: #446592;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ACE5D6;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+    .navbar a.active {
+    color: #446592;
+    
+
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+}
+
+
+
+
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size:56px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4A89AC
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #446592;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #446592;
+    border: 2px solid #446592;
+    border-radius: 8px;
+    font-size:19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight:600;
+    letter-spacing: 1px
+    z-index: 1;
+    overflow: hidden;
+    
+
+}
+
+.btn-box a{
+    background: transparent;
+    color: #ACE5F6;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #446592;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    left: 20;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #446592;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #4A89AC;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #ACE5F6;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #446592;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+
+.leaf {
+    position: absolute;
+    top: -100px;
+    animation: fall linear infinite;
+    opacity: 0.8; 
+}
+
+.leaf:nth-child(1) {
+    left: 10%;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    width: 30px; 
+}
+
+.leaf:nth-child(2) {
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    width: 40px; 
+}
+
+.leaf:nth-child(3) {
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    width: 50px; 
+}
+
+@keyframes fall {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        top: -100px;
+    }
+    50% {
+        transform: translateX(30px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(-30px) rotate(360deg);
+        top: 100vh;
+    }
+}
+
+.LOVELY {
+    position: absolute; 
+    right: 0; 
+    top: 70%; 
+    transform: translateY(-50%); 
+    width: 500px; 
+    height: auto; 
+}
+.Nakakakilig{
+    position: absolute; 
+    right: 30px; 
+    transform: translateY(-50%) translateX(-10px);
+    top: 30%; 
+    transform: translateY(-50%); 
+    width: 100px; 
+    height: auto;
+
+    animation: disappear 5s infinite alternate;
+
+}
+ 
+
+
+@keyframes disappear {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+.HIHIHI {
+    position: absolute; 
+    right: 400px; 
+    transform: translateY(-50%) translateX(-10px);
+    top: 35%; 
+    transform: translateY(-50%); 
+    width: 100px; 
+    height: auto;
+    animation: disappear 6s infinite alternate;
+
+}
+@keyframes disappear {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+
+    
+
+    }
+
+.popup {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
