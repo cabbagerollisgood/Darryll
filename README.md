@@ -1,3 +1,3 @@
 # Darryll
 Final Project for IT
-just click the link thanks
+jthe UI is pretty self explanatory so have fun using it.
